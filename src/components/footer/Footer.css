@@ -1,0 +1,28 @@
+footer{
+    text-align: center;
+    color: #fff;
+    background-image: url(../../assets/images/footerback.jpg);
+}
+
+footer strong{
+    color: #00b33c;
+}
+
+.foot-top-con{
+    padding: 25px 0;
+    text-align: left;
+}
+
+.foot-top-con p{
+    line-height: 30px;
+    padding: 10px 0;
+}
+.foot-top-con i{
+    padding-right: 5px;
+    color: #00b33c;
+}
+.foot-bottom-con{
+    background-color: #222222;
+    text-align: center;
+    padding: 25px 0;
+}

@@ -1,0 +1,30 @@
+.contact-box{
+  background-color: #fff;
+  box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  height: 230px !important;
+  font-size: 14px;
+  line-height: 30px;
+}
+.contact-box .contact-icon{
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#00b33c;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.contact-box .contact-icon i{
+  font-size: 1.5rem;
+  color: #fff;
+}
+.contact-content .contact-title{
+  padding: 1rem 0;
+}
+.contact-content .contact-info{
+  color: #4e4e4e;
+}
