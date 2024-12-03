@@ -4,7 +4,7 @@ function PostItem({ postImg, postTitle, postText, postAuther, postTime }) {
       <div className="col-4">
         <div className="blog-box">
           <div className="blog-img">
-            <img src={postImg} className="img-fluid"/>
+            <img src={postImg} className="img-fluid" alt="post-image"/>
           </div>
           <div className="blog-content">
             <h3 className="blog-title">{postTitle}</h3>

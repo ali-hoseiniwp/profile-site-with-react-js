@@ -1,0 +1,61 @@
+.contactform-container{
+  margin: 40px auto !important;
+  padding: 40px;
+  background-color: #fff;
+  text-align: center;
+  width: 800px;
+  border-radius: 10px;
+}
+
+.contactform-container form input, select, textarea{
+  width: 100%;
+  font-size: 18px;
+  background-color: whitesmoke;
+  border: none;
+  color: #888888;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.contactform-container form input:focus{
+  outline: 1px solid #b6b6b6;
+}
+
+.contactform-container form textarea:focus{
+  outline: 1px solid #b6b6b6;
+}
+
+.contactform-container form input::placeholder{
+  color: #888888;
+}
+
+.contactform-container form select:focus{
+  outline: none;
+}
+
+.contactform-container form textarea{
+  height: 200px;
+}
+
+.contactform-container form button{
+  padding: 10px 40px;
+  border: none;
+  font-size: 25px;
+  background-color: #00b33c;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+select option{
+  color: #5c5b5b;
+}
+
+.contactform-container form input, select{
+  height: 50px;
+  margin-bottom: 16px;
+  border: none;
+}
+.contactform-container form{
+  width: 100%;
+}

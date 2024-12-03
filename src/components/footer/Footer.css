@@ -13,9 +13,13 @@ footer strong{
     text-align: left;
 }
 
+.foot-top-con h3{
+    padding-bottom: 20px;
+}
+
 .foot-top-con p{
-    line-height: 30px;
-    padding: 10px 0;
+    line-height: 32px;
+    padding-bottom: 20px;
 }
 .foot-top-con i{
     padding-right: 5px;
@@ -25,4 +29,33 @@ footer strong{
     background-color: #222222;
     text-align: center;
     padding: 25px 0;
+}
+
+.footer-list h3{
+    padding-bottom: 20px;
+}
+
+.footer-list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 35px;
+    display: inline-block;
+    transition: all .2s;
+}
+
+.footer-list ul li a:hover{
+    color: #00b33c;
+}
+
+.foot-info h2{
+    padding-bottom: 15px;
+}
+.foot-info p{
+    line-height: 25px;
+    padding-bottom: 40px;
+}
+
+.foot-info i{
+    font-size: 25px;
+    padding-right: 15px;
 }

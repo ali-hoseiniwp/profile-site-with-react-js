@@ -1,4 +1,5 @@
 import './Contact.css';
+import Contform from './contform/Contform';
 import Contitem from './contitem/Contitem';
 
 function Contact(){
@@ -10,19 +11,19 @@ function Contact(){
       contDesc: ' Khorasan Razavi Mashhad city, \n panjtan BLV'
   },
   {
-    id: 1,
+    id: 2,
     contIcon: 'bi bi-telephone-fill',
     contTitle: 'Mobile:',
     contDesc: ' +989350000000, \n +989150000000'
 },
 {
-  id: 1,
+  id: 3,
   contIcon: 'bi bi-envelope-fill',
   contTitle: 'Email:',
   contDesc: ' info@example.com \n support@example.com'
 },
 {
-  id: 1,
+  id: 4,
   contIcon: 'bi bi-clock-fill',
   contTitle: 'Timing:',
   contDesc: ' Mon-Fri - 9:00 AM to 5:00 PM \n sat - 10:00 AM to 1:00 PM'
@@ -40,9 +41,10 @@ function Contact(){
         <div className="contactitem-cotainer row">
         {contItems.map(item => <Contitem key={item.id} {...item} />)}
         </div>
-        <div className="contactform-container row">
-          
+        <div className="container">
+          <Contform/>
         </div>
+          
       </div>
     </section>
   )
