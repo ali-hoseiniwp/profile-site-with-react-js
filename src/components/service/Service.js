@@ -1,3 +1,4 @@
+import { Row } from 'react-bootstrap'
 import './Service.css'
 import ServiceIteme from './ServiceIteme'
 function Service() {
@@ -50,9 +51,9 @@ function Service() {
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         </p>
                     </div>
-                    <div className="row">
+                    <Row className="box-container-service d-flex flex-wrap justify-content-between gap-30">
                         {services.map(service => <ServiceIteme key={service.id} {...service} />)}
-                    </div>
+                    </Row>
                 </div>
             </section>
         </>

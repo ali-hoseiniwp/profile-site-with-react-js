@@ -1,8 +1,7 @@
-function ServiceIteme({serviceIcon, serviceTitle, serviceDesc}){
-    return(
+function ServiceIteme({ serviceIcon, serviceTitle, serviceDesc }) {
+    return (
         <>
-            <div className="col-4">
-                <div className="service-box">
+            <div className="service-box">
                 <div className="service-icon">
                     <i className={serviceIcon}></i>
                 </div>
@@ -11,7 +10,6 @@ function ServiceIteme({serviceIcon, serviceTitle, serviceDesc}){
                     <p className="service-info">
                         {serviceDesc}
                     </p>
-                </div>
                 </div>
             </div>
         </>

@@ -1,26 +1,126 @@
-.navbar-container{
-  padding: 20px 0;
+/* استایل اصلی نوبار */
+.navbar-container {
+  padding: 20px 50px;
+  width: 100%;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.9);
-  z-index: 10;
-} 
-.navbar .nav-link{
+  z-index: 1000;
+}
+
+/* استایل لوگو */
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* استایل لینک‌های نوبار */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar .nav-link {
   text-decoration: none;
   padding: 10px 15px;
   color: #fff;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
-.navbar .nav-link:hover{
+.navbar .nav-link:hover,
+.navbar .nav-link:active {
   color: #00b33c;
 }
 
-.navbar .nav-link:active{
-  color: #00b33c;
-}
-.active{
+.active {
   color: #00b33c !important;
+}
+
+/* دکمه منوی همبرگری */
+.hamburger-menu {
+  display: none; /* در دسکتاپ مخفی باشد */
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #00b33c;
+  cursor: pointer;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.hamburger-menu:focus {
+  outline: none;
+}
+
+/* افکت چرخش هنگام باز شدن */
+.hamburger-menu.open {
+  transform: rotate(180deg);
+  color: #00b33c;
+}
+
+/* استایل اولیه منو (بسته) */
+.navbar {
+  display: none; /* مخفی کردن کامل منو */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* وقتی منو باز است */
+.navbar.open {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ریسپانسیو برای موبایل */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 20px;
+  }
+
+  .hamburger-menu {
+    display: block; /* فقط در موبایل نمایش داده شود */
+  }
+
+  .navbar {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.95);
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar li {
+    padding: 10px 0;
+  }
+
+  .navbar .nav-link {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+  }
+}
+
+/* در دسکتاپ منو همیشه نمایش داده شود */
+@media (min-width: 769px) {
+  .navbar {
+    display: flex !important;
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

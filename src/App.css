@@ -13,6 +13,7 @@
   }
 }
 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,5 +35,25 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* جلوگیری از اسکرول افقی */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* اطمینان از اینکه نوبار کل عرض صفحه را می‌گیرد */
+.navbar-container {
+  width: 100%;
+}
+
+/* در موبایل اطمینان از اینکه منو کاملاً داخل صفحه است */
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;  /* عرض منو هم به اندازه صفحه باشد */
+    left: 0;
+    right: 0;
   }
 }
