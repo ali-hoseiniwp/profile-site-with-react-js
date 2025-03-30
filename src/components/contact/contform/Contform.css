@@ -1,12 +1,36 @@
-.contactform-container{
-  padding: 40px 30px !important;
+.form-container{
   background-color: #fff;
+  max-width: 1200px;
+  margin: 40px auto;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.contactform-container{
+  padding: 20px !important;
   text-align: center;
   max-width: 1200px;
   border-radius: 10px;
   flex-direction: row;
   display: flex;
   flex-direction: column;
+}
+
+.title-box{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00b33c;
+  padding: 20px;
+}
+
+.title-box h3{
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 auto; /* بالا-چپ-پایین-راست */
+  text-align: center;
 }
 
 .contact-box-form{
@@ -67,7 +91,7 @@ select option{
 }
 
 @media (max-width: 1260px) {
-  .contactform-container{
+  .contactform-container, .form-container {
     margin: 30px;
   }
   
@@ -97,5 +121,9 @@ select option{
   .image-contact-form img{
     width: 70%;
     margin: 20px auto;
+  }
+
+  .contactform-container{
+    padding: 0 !important;
   }
 }

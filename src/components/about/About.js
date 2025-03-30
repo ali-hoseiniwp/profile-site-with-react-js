@@ -6,8 +6,8 @@ function About(){
         <>
         <section id="about">
       <div className="about grid-container">
-        <h2 className="title">About Me</h2>
         <img className="about-img" src={aboutimg} alt="milad" />
+        <h2 className="title">About Me</h2>
         <p className="info">
           Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
           Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
