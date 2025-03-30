@@ -101,7 +101,7 @@ span{
   .grid-container[data-cols="3"] .grid-item { flex: 0 0 calc(50% - 15px); } /* از ۴ یا ۳ ستون به ۲ ستون */
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .grid-container[data-cols="4"] .grid-item,
   .grid-container[data-cols="3"] .grid-item,
   .grid-container[data-cols="2"] .grid-item,
