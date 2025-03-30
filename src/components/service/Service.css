@@ -31,8 +31,7 @@
 
 @media (max-width: 768px) {
     .service-box{
-        padding-top: 40px !important;
-        padding-bottom: 40px !important;
+        padding: 40px !important;
     }
 }
 
