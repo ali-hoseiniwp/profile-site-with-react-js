@@ -6,9 +6,3 @@
 .section-desc{
   margin: 20px auto;
 }
-
-@media (max-width: 768px) {
-  .section-title{
-      font-size: 2rem !important;
-  }
-}
