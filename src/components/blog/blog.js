@@ -43,7 +43,7 @@ function Blog() {
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         </p>
                     </div>
-                    <div className="row">
+                    <div className="row grid-container blog-container" data-cols="3">
                         {blogs.map( post => <PostItem key={post.id} {...post}/>)}
                     </div>
                 </div>

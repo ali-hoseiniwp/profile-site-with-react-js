@@ -5,7 +5,7 @@ function About(){
     return(
         <>
         <section id="about">
-      <div className="about">
+      <div className="about grid-container">
         <h2 className="title">About Me</h2>
         <img className="about-img" src={aboutimg} alt="milad" />
         <p className="info">

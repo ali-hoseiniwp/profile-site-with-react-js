@@ -1,9 +1,9 @@
 import './Footer.css'
 function Topfooter(){
   return(
-    <div className="container foot-top-con">
+    <div className="container foot-top-con grid-container" data-cols="3">
       <div className="row">
-        <div className="col-4">
+        <div className="footer-item grid-item">
           <h3>Contact Us</h3>
           <div className="adress">  
             <p>
@@ -25,16 +25,16 @@ function Topfooter(){
           </div>
           
         </div>
-        <div className="col-4 footer-list">
+        <div className="footer-list footer-item grid-item">
             <h3>important links</h3>
             <ul>
-              <li className='About'><a className="nav-link" href="#about">About</a></li>
+              <li className='About text-success'><a className="nav-link" href="#about">About</a></li>
               <li className='Services'><a className="nav-link" href="#services">Services</a></li>
               <li className='Contact'><a className="nav-link" href="#contact">Contact</a></li>
               <li className='blog'><a className="nav-link" href="#blog">Blog</a></li>
             </ul>
         </div>
-        <div className="col-4 foot-info">
+        <div className=" foot-info footer-item grid-item">
           <h2 className="logo">ROYANSITE <span>.net</span></h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, eveniet.</p>
           <div className="social-foot">

@@ -51,7 +51,7 @@ function Service() {
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         </p>
                     </div>
-                    <Row className="box-container-service d-flex flex-wrap justify-content-between gap-30">
+                    <Row className="box-container-service grid-container" data-cols="3">
                         {services.map(service => <ServiceIteme key={service.id} {...service} />)}
                     </Row>
                 </div>

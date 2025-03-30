@@ -13,6 +13,12 @@ footer strong{
     text-align: left;
 }
 
+.footer-item{
+    background-color:#22222200 !important;
+    text-align: left !important;
+    padding: 20px 0 !important;
+}
+
 .foot-top-con h3{
     padding-bottom: 20px;
 }
@@ -28,7 +34,11 @@ footer strong{
 .foot-bottom-con{
     background-color: #222222;
     text-align: center;
-    padding: 25px 0;
+    padding: 30px 15px;
+}
+
+.copyright{
+    margin-bottom: 10px;
 }
 
 .footer-list h3{
@@ -59,3 +69,31 @@ footer strong{
     font-size: 25px;
     padding-right: 15px;
 }
+
+@media (max-width: 992px) {
+    .foot-top-con {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* دو آیتم اول هرکدام ۵۰٪ عرض بگیرند */
+    .footer-item:nth-child(1),
+    .footer-item:nth-child(2) {
+        flex: 0 0 50%; 
+        max-width: 50%;
+    }
+
+    /* آیتم سوم باید ۱۰۰٪ باشد و در سطر جدید برود */
+    .footer-item:nth-child(3) {
+        flex: 0 0 100% !important;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-item {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+

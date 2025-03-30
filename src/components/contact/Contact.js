@@ -31,14 +31,14 @@ function Contact(){
   ]
   return(
     <section id="contact">
-      <div className="container">
+      <div className="container-contact">
                     <div className="section-info">
                         <h2 className="section-title">Contact Us information</h2>
                         <p className="section-desc">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         </p>
                     </div>
-        <div className="contactitem-cotainer row">
+        <div className="contactitem-cotainer grid-container" data-cols="4">
         {contItems.map(item => <Contitem key={item.id} {...item} />)}
         </div>
         <div className="container">

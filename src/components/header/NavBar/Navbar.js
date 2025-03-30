@@ -6,21 +6,20 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // کنترل نمایش منو
 
   const handleItemClick = (event) => {
-    event.preventDefault();
     const targetLi = event.target.closest("li");
     if (targetLi) {
       setActiveItem(targetLi.getAttribute("data-name"));
-      setMenuOpen(false); // بعد از انتخاب، منو بسته شود
+      setMenuOpen(false); // بستن منو بعد از کلیک روی آیتم
     }
   };
 
   return (
     <div className="navbar-container">
-      <div className="container d-flex justify-content-between align-items-center">
+      <div className="navbar-content">
         <h2 className="logo">ROYANSITE <span>.net</span></h2>
 
         {/* دکمه منوی همبرگری */}
-        <button className="hamburger-menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <button className={`hamburger-menu ${menuOpen ? "open" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? "✖" : "☰"}
         </button>
 
